@@ -1,5 +1,5 @@
 # USAGE
-# python generate_images.py --image dog.jpg --output generated_dataset/dogs
+# python generate_images.py --image dog.jpg --output generated_dataset/dog
 # python generate_images.py --image cat.jpg --output generated_dataset/cats
 
 # import the necessary packages
