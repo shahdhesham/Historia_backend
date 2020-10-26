@@ -41,9 +41,15 @@ import os
 # 	help="path to output loss/accuracy plot")
 # args = vars(ap.parse_args())
 datapath="E:/Grad project/keras-video-classification/keras-video-classification/data"
+<<<<<<< HEAD
 outputlabelbinarizer="E:/Grad project/keras-video-classification/keras-video-classification/model/videoclassificationbinarizer"
 outputmodel="E:/Grad project/keras-video-classification/keras-video-classification/output/videoclassificationmodel"
 plot="E:/Grad project/keras-video-classification/keras-video-classification/output"
+=======
+outputlabelbinarizer="E:/Grad project/Historia-2/keras-video-classification/keras-video-classification/model/videoclassificationbinarizer"
+outputmodel="E:/Grad project/Historia-2/keras-video-classification/keras-video-classification/output/videoclassificationmodel"
+plot="E:/Grad project/Historia-2/keras-video-classification/keras-video-classification/output"
+>>>>>>> ad570f2b49f6fbdb65cdc882921f3ab23e7ab058
 epoch=10
 # initialize the set of labels from the spots activity dataset we are
 # going to train our network on
@@ -175,7 +181,11 @@ plt.savefig(plot)
 print("[INFO] serializing network...")
 model.save(outputmodel)
 # serialize the label binarizer to disk
+<<<<<<< HEAD
 f = open("E:/Grad project/keras-video-classification/keras-video-classification/model/videoclassificationbinarizer.pickle", "wb")
+=======
+f = open("E:/Grad project/Historia-2/keras-video-classification/keras-video-classification/model/videoclassificationbinarizer.pickle", "wb")
+>>>>>>> ad570f2b49f6fbdb65cdc882921f3ab23e7ab058
 f.write(pickle.dumps(lb))
 f.close()
 print(classification_report(testY.argmax(axis=1),
