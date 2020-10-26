@@ -20,8 +20,8 @@ ap.add_argument("-o", "--output", required=True,
 ap.add_argument("-t", "--total", type=int, default=20,
 	help="# of training samples to generate")
 args = vars(ap.parse_args())
-datapath="E:/Grad project/keras-data-augmentation/cat.jpg"
-out="E:/Grad project/keras-data-augmentation/output"
+datapath="E:/Grad project/Data Augmentation/Data_Augmentation/13.jpg"
+out="E:/Grad project/Data Augmentation/Data_Augmentation/output"
 # load the input image, convert it to a NumPy array, and then
 # reshape it to have an extra dimension
 print("[INFO] loading example image...")
