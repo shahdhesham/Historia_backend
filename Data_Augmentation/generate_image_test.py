@@ -1,6 +1,3 @@
-# USAGE
-# python generate_images.py --image dog.jpg --output generated_dataset/dog
-# python generate_images.py --image cat.jpg --output generated_dataset/cats
 
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -11,19 +8,8 @@ import argparse
 from imutils import paths
 import cv2
 
-# construct the argument parser and parse the arguments
-# ap = argparse.ArgumentParser()
-# '''
-# ap.add_argument("-i", "--image", required=True,
-# 	help="path to the input image")
-# ap.add_argument("-o", "--output", required=True,
-# 	help="path to output directory to store augmentation examples")
-# '''
-# ap.add_argument("-t", "--total", type=int, default=3,
-# 	help="# of training samples to generate")
-# args = vars(ap.parse_args())
-datapath="E:/Grad project/keras-data-augmentation/testt"
-out="E:/Grad project/keras-data-augmentation/output"
+datapath="/Users/daliamahmoud/Historia/Data_Augmentation/testt"
+out="/Users/daliamahmoud/Historia/Data_Augmentation/test"
 # load the input image, convert it to a NumPy array, and then
 # reshape it to have an extra dimension
 
@@ -42,7 +28,7 @@ for imagePath in imagePaths:
 datanp=np.array(data)
 # construct the image generator for data augmentation then
 # initialize the total number of images generated thus far
-print(len(data))
+print(len(datanp))
 aug = ImageDataGenerator(
 	rotation_range=30,
 	zoom_range=0.15,
@@ -58,8 +44,8 @@ print("[INFO] generating images...")
 
 # augmentedImages=[]
 for i in range(len(datanp)):
-    print("Generating is running")
-    if(i== len(datanp)-1):
+        print("Generating is running")
+  
         imageGen= aug.flow(datanp[i], batch_size=1, save_to_dir=out,
         save_prefix="image", save_format="jpg")
         for image in imageGen:
@@ -67,18 +53,8 @@ for i in range(len(datanp)):
 	        total += 1
 	# if we have reached the specified number of examples, break
 	# from the loop
-	        if total == 6:
-		        continue
-            #batch_size is to iterate over the picture pixel by pixel
-        break
-    else:
-        imageGen= aug.flow(datanp[i], batch_size=1, save_to_dir=out,
-        save_prefix="image", save_format="jpg")
-        for image in imageGen:
-	# increment our counter
-	        total += 1
-	# if we have reached the specified number of examples, break
-	# from the loop
-	        if total == 6:
-		        break#batch_size is to iterate over the picture pixel by pixel
-# loop over examples from our image data augmentation generator
+	        if (total%6==0):
+				#total = 0
+		        break
+			
+          
