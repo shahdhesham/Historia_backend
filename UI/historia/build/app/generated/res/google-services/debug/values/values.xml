@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1075654176029-9f4n7mh1fkuhr09g05o2odb5j08uhhlv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1075654176029</string>
+    <string name="google_api_key" translatable="false">AIzaSyCSOnZOjdaaBYZUjCnz1wtiD_2sPmGDy9I</string>
+    <string name="google_app_id" translatable="false">1:1075654176029:android:1aae5a2e982098209605f4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCSOnZOjdaaBYZUjCnz1wtiD_2sPmGDy9I</string>
+    <string name="google_storage_bucket" translatable="false">historia-8452f.appspot.com</string>
+    <string name="project_id" translatable="false">historia-8452f</string>
+</resources>
