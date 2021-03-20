@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import './Scan.dart';
+//import './Audio.dart';
 import 'package:adobe_xd/page_link.dart';
-import './Text.dart';
+import './Scan.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Audio extends StatelessWidget {
-  Audio({
+class Textt extends StatelessWidget {
+  Textt({
     Key key,
   }) : super(key: key);
   @override
@@ -22,23 +22,6 @@ class Audio extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color(0xff000000),
                 border: Border.all(width: 1.0, color: const Color(0xff707070)),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(-137.0, 0.0),
-            child:
-                // Adobe XD layer: 'e' (shape)
-                Container(
-              width: 650.0,
-              height: 812.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/bg.jpg'),
-                  fit: BoxFit.fill,
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.54), BlendMode.dstIn),
-                ),
               ),
             ),
           ),
@@ -72,41 +55,6 @@ class Audio extends StatelessWidget {
               ),
             ),
           ),
-          Container(),
-          Transform.translate(
-            offset: Offset(12.0, 88.0),
-            child:
-                // Adobe XD layer: 'bg' (shape)
-                PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Text(),
-                ),
-              ],
-              child: SvgPicture.string(
-                _svg_xkk829,
-                allowDrawingOutsideViewBox: true,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(129.0, 88.0),
-            child: Text(
-              'SCAN\n',
-              style: TextStyle(
-                fontFamily: 'Inter',
-                fontSize: 40,
-                color: const Color(0xffffffff),
-                height: 0.85,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
           Transform.translate(
             offset: Offset(67.0, 206.0),
             child:
@@ -119,6 +67,40 @@ class Audio extends StatelessWidget {
                   image: const AssetImage(''),
                   fit: BoxFit.fill,
                 ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(281.0, 88.0),
+            child:
+                // Adobe XD layer: 'bg' (shape)
+                SvgPicture.string(
+              _svg_5qu7j1,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(296.0, 100.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  //pageBuilder: () => Audio(),
+                ),
+              ],
+              child: Text(
+                'Audio',
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 17,
+                  color: const Color(0xffffffff),
+                  height: 0.9411764705882353,
+                ),
+                textHeightBehavior:
+                    TextHeightBehavior(applyHeightToFirstAscent: false),
+                textAlign: TextAlign.left,
               ),
             ),
           ),
@@ -166,7 +148,7 @@ class Audio extends StatelessWidget {
           ),
           Container(),
           Transform.translate(
-            offset: Offset(295.0, 100.0),
+            offset: Offset(38.0, 100.0),
             child: PageLink(
               links: [
                 PageLinkInfo(
@@ -174,31 +156,6 @@ class Audio extends StatelessWidget {
                   ease: Curves.easeOut,
                   duration: 0.3,
                   pageBuilder: () => Scan(),
-                ),
-              ],
-              child: Text(
-                'Audio',
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 17,
-                  color: const Color(0xffffffff),
-                  height: 0.9411764705882353,
-                ),
-                textHeightBehavior:
-                    TextHeightBehavior(applyHeightToFirstAscent: false),
-                textAlign: TextAlign.left,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(32.0, 100.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Text(),
                 ),
               ],
               child: Text(
@@ -216,40 +173,47 @@ class Audio extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(36.0, 588.0),
-            child:
-                // Adobe XD layer: 'speaker' (shape)
-                Container(
-              width: 45.0,
-              height: 45.0,
+            offset: Offset(129.0, 88.0),
+            child: Text(
+              'SCAN\n',
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 40,
+                color: const Color(0xffffffff),
+                height: 0.85,
+              ),
+              textHeightBehavior:
+                  TextHeightBehavior(applyHeightToFirstAscent: false),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(10.0, 509.0),
+            child: Container(
+              width: 215.0,
+              height: 150.0,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
-                ),
+                color: const Color(0xa1060606),
+                border: Border.all(width: 1.0, color: const Color(0x00000000)),
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(111.0, 582.0),
-            child:
-                // Adobe XD layer: 'unnamed' (shape)
-                Container(
-              width: 205.0,
-              height: 57.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
+            offset: Offset(12.4, 522.0),
+            child: SizedBox(
+              width: 211.0,
+              child: Text(
+                'The Imam Hussein Mosque\n or Jame Sayyidna Husayn is \na mosque and mausoleum of\n Husayn ibn Ali, originally\n built  in 1154, and then later \nreconstructed in 1874. ',
+                style: TextStyle(
+                  fontFamily: 'Calibri',
+                  fontSize: 16,
+                  color: const Color(0xffffffff),
+                  height: 1.25,
                 ),
+                textHeightBehavior:
+                    TextHeightBehavior(applyHeightToFirstAscent: false),
+                textAlign: TextAlign.center,
               ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(92.5, 610.5),
-            child: SvgPicture.string(
-              _svg_d8ans3,
-              allowDrawingOutsideViewBox: true,
             ),
           ),
         ],
@@ -258,7 +222,5 @@ class Audio extends StatelessWidget {
   }
 }
 
-const String _svg_xkk829 =
-    '<svg viewBox="12.0 88.0 80.0 44.0" ><path transform="translate(12.0, 88.0)" d="M 12 0 L 68 0 C 74.62741851806641 0 80 5.37258243560791 80 12 L 80 32 C 80 38.62741851806641 74.62741851806641 44 68 44 L 12 44 C 5.37258243560791 44 0 38.62741851806641 0 32 L 0 12 C 0 5.37258243560791 5.37258243560791 0 12 0 Z" fill="#c49273" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_d8ans3 =
-    '<svg viewBox="92.5 610.5 267.0 1.0" ><path transform="translate(92.5, 610.5)" d="M 0 0 L 267 0" fill="none" stroke="#000000" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_5qu7j1 =
+    '<svg viewBox="281.0 88.0 80.0 44.0" ><path transform="translate(281.0, 88.0)" d="M 12 0 L 68 0 C 74.62741851806641 0 80 5.37258243560791 80 12 L 80 32 C 80 38.62741851806641 74.62741851806641 44 68 44 L 12 44 C 5.37258243560791 44 0 38.62741851806641 0 32 L 0 12 C 0 5.37258243560791 5.37258243560791 0 12 0 Z" fill="#c49273" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';

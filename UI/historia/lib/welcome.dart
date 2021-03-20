@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './signup.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:adobe_xd/blend_mask.dart';
-import './signin.dart';
+
 import './homewithoutlogin.dart';
 
 class welcome extends StatelessWidget {
@@ -35,7 +35,7 @@ class welcome extends StatelessWidget {
               height: 812.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage('assets/images/bg.jpg'),
+                  image: const AssetImage('images/bg.jpg'),
                   fit: BoxFit.fill,
                   colorFilter: new ColorFilter.mode(
                       Colors.black.withOpacity(0.54), BlendMode.dstIn),
@@ -52,7 +52,7 @@ class welcome extends StatelessWidget {
                 'Historia',
                 style: TextStyle(
                   fontFamily: 'Antens Script',
-                  fontSize: 150,
+                  fontSize: 100,
                   color: const Color(0xffffffff),
                 ),
                 textAlign: TextAlign.left,
@@ -88,19 +88,27 @@ class welcome extends StatelessWidget {
             offset: Offset(95.6, 603.0),
             child: BlendMask(
               blendMode: BlendMode.lighten,
-              child: SizedBox(
+              child: Container(
                 width: 185.0,
-                child: Text(
-                  'Create an account',
-                  style: TextStyle(
-                    fontFamily: 'Calibri',
-                    fontSize: 23,
-                    color: const Color(0xffffffff),
-                    height: 0.9565217391304348,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => signup()),
+                    );
+                  },
+                  child: Text(
+                    'Create an account',
+                    style: TextStyle(
+                      fontFamily: 'Calibri',
+                      fontSize: 23,
+                      color: const Color(0xffffffff),
+                      height: 0.9565217391304348,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.center,
                   ),
-                  textHeightBehavior:
-                      TextHeightBehavior(applyHeightToFirstAscent: false),
-                  textAlign: TextAlign.center,
                 ),
               ),
             ),

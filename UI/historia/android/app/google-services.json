@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075654176029",
+    "project_id": "historia-8452f",
+    "storage_bucket": "historia-8452f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075654176029:android:1aae5a2e982098209605f4",
+        "android_client_info": {
+          "package_name": "com.example.historia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075654176029-9f4n7mh1fkuhr09g05o2odb5j08uhhlv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSOnZOjdaaBYZUjCnz1wtiD_2sPmGDy9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075654176029-9f4n7mh1fkuhr09g05o2odb5j08uhhlv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
