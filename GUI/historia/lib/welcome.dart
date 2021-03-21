@@ -10,7 +10,7 @@ class welcome extends StatelessWidget {
     Key key,
   }) : super(key: key);
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {welcome
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: Stack(
@@ -88,6 +88,7 @@ class welcome extends StatelessWidget {
             offset: Offset(95.6, 603.0),
             child: BlendMask(
               blendMode: BlendMode.lighten,
+              
               child: Container(
                 width: 185.0,
                 child: ElevatedButton(
@@ -111,6 +112,7 @@ class welcome extends StatelessWidget {
                   ),
                 ),
               ),
+              
             ),
           ),
           Container(),
