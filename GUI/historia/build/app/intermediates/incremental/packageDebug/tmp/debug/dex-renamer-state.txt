@@ -1,4 +1,0 @@
-#Sat Mar 20 15:21:41 EET 2021
-base.0=/Users/daliamahmoud/Historia/GUI/historia/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
