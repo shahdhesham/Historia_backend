@@ -8,8 +8,8 @@ import argparse
 from imutils import paths
 import cv2
 
-datapath="/Users/daliamahmoud/Historia/Data_Augmentation/input"
-out="/Users/daliamahmoud/Historia/Data_Augmentation/output"
+datapath="D:/Dataset/new locations/Sultan Hassan Mosque"
+out="D:/Dataset/new locations/Sultan Hassan Mosque"
 # load the input image, convert it to a NumPy array, and then
 # reshape it to have an extra dimension
 
@@ -20,6 +20,7 @@ data=[]
 for imagePath in imagePaths:
     print(imagePath)
     image = cv2.imread(imagePath)
+	cv2.imshow(image)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.resize(image, (224, 224))
     image = img_to_array(image)
